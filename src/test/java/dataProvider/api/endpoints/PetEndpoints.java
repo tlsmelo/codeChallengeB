@@ -122,12 +122,12 @@ public class PetEndpoints {
 
     public int postPetImage(int id, File imageFile) {
         Response response = testAPI.getAPI()
-                .contentType("multipart/form-data")
+                .contentType("application/octet-stream")
                 //.header("Content-Type","application/octet-stream")
                 //.accept("application/json")
                 .basePath(getBasePath())
-                .multiPart("file", imageFile)
                 .log().all()
+                .body(imageFile)
                 .post("/"+id+"/uploadImage")
                 .then()
                 .log().ifValidationFails()
