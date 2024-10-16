@@ -25,4 +25,4 @@ Feature: API Tests - Pet Endpoint
   #Ignore this test for now
   Scenario: Perform add a pet and then add an image
     Given I perform POST operation for pet
-    Then I perform POST operation uploding an image for pet "11"
+    Then I perform POST operation uploading an image for pet "11"
