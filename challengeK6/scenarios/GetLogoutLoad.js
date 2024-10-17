@@ -1,5 +1,6 @@
-import { group, sleep } from "k6";
-import GetLoginLoad from "./scenarios/GetLoginLoad.js";
+import { check, sleep } from 'k6';
+import http from 'k6/http';
+
 
 export const options = {
     stages: [
@@ -13,11 +14,13 @@ export const options = {
     }
 }
 
-export default () => {
-    group('Endpoint User', () => {
-        GetLoginLoad();
-    });
+export default function () {
+    const res = http.get('http://localhost:8080/api/v3/user/logout')
 
-    sleep(1);
+    check (res, {
+        'status should be 200': (r) => r.status === 200
+    })
+
+    sleep(1)
 
 }
