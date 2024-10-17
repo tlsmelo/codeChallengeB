@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8a4ba997-89fd-4c65-b83e-d81839ac166f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeChallengeB.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configs/localConfiguration.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Runner/RunnerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataProvider/ConfigFileReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataProvider/api/TestAPI.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataProvider/api/datamodels/Category.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataProvider/api/datamodels/Inventory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataProvider/api/datamodels/Order.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataProvider/api/datamodels/Pet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataProvider/api/datamodels/Tags.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataProvider/api/datamodels/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataProvider/api/endpoints/PetEndpoints.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataProvider/api/endpoints/StoreEndpoints.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/dataProvider/api/endpoints/UserEndpoints.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/PetAPISteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/StoreAPISteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/stepDefinitions/UserAPISteps.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utils/FileUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/extent.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/APITestPet.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/APITestStore.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/APITestUser.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/supportFiles/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Runner/RunnerTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/ConfigFileReader.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/TestAPI.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/datamodels/Category$CategoryBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/datamodels/Category.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/datamodels/Inventory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/datamodels/Order$OrderBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/datamodels/Order.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/datamodels/Pet$PetBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/datamodels/Pet.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/datamodels/Tags$TagsBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/datamodels/Tags.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/datamodels/User$UserBuilder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/datamodels/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/endpoints/PetEndpoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/endpoints/StoreEndpoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/dataProvider/api/endpoints/UserEndpoints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/extent.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/APITestPet.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/APITestStore.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/APITestUser.feature" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/PetAPISteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/StoreAPISteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/stepDefinitions/UserAPISteps.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/supportFiles/dog.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utils/FileUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/reports 16-out.-24-12-24-33/test/pdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/reports 16-out.-24-12-24-33/test/testReport.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/reports 16-out.-24-15-03-47/test/pdfReport.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test-output/reports 16-out.-24-15-03-47/test/testReport.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2nZjhoJjd5BK6bLJRQuWKMuI5U3" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/TLCMELO/IdeaProjects/codeChallengeB/codeChallengeB"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a4ba997-89fd-4c65-b83e-d81839ac166f" name="Changes" comment="" />
+      <created>1729187613324</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729187613324</updated>
+    </task>
+    <servers />
+  </component>
+</project>
