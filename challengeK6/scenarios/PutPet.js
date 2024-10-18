@@ -6,8 +6,11 @@ export function handleSummary(data) {
   const now = new Date();
   const formattedDate = now.toISOString().replace(/T/, '-').replace(/:/g, '').substring(0, 17);
   const fileName = `reportUpdatePet${formattedDate}.html`;
+
+  const reportPath = `./reports/${fileName}`;
+
   return {
-    [fileName]: htmlReport(data),
+    [reportPath]: htmlReport(data),
   };
 }
 export const options = {
