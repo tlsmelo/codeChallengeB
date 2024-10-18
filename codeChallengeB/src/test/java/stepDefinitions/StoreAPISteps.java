@@ -1,22 +1,14 @@
 package stepDefinitions;
 
-import dataProvider.ConfigFileReader;
 import dataProvider.api.datamodels.Inventory;
 import dataProvider.api.datamodels.Order;
-import dataProvider.api.datamodels.User;
 import dataProvider.api.endpoints.StoreEndpoints;
-import dataProvider.api.endpoints.UserEndpoints;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
-
-import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 

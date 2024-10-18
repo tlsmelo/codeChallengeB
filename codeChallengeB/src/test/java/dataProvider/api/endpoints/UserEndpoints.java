@@ -1,16 +1,9 @@
-/*
- * Copyright (C) 2018-2020 TAG QA TEAM
- * This file is part of  TAG-automation
- * Created at 10/30/20 12:09 PM by tmelo
- */
-
 package dataProvider.api.endpoints;
 
 import dataProvider.api.TestAPI;
 import dataProvider.api.datamodels.User;
 import io.restassured.response.Response;
 
-import java.lang.reflect.ParameterizedType;
 import java.util.ArrayList;
 import java.util.List;
 

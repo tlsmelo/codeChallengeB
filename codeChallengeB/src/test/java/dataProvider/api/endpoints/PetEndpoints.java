@@ -1,9 +1,3 @@
-/*
- * Copyright (C) 2018-2020 TAG QA TEAM
- * This file is part of  TAG-automation
- * Created at 10/30/20 12:09 PM by tmelo
- */
-
 package dataProvider.api.endpoints;
 
 import dataProvider.api.TestAPI;
@@ -68,29 +62,6 @@ public class PetEndpoints {
         return Arrays.asList(response.as(Pet[].class));
     }
 
-    public Response getOrderByIdResponse(int orderId) {
-        Response response = testAPI.getAPI()
-                .basePath(getBasePath())
-                .log().all()
-                .get("/order/"+orderId)
-                .then()
-                .extract()
-                .response();
-        return response;
-    }
-
-    public Inventory getInventory() {
-        Response response = testAPI.getAPI()
-                .basePath(getBasePath())
-                .get("/inventory")
-                .then()
-                .log().all()
-                .statusCode(200)
-                .extract()
-                .response();
-        return response.as(Inventory.class);
-    }
-
     public Pet postPet(Pet pet) {
         Response response = testAPI.getAPI()
                 .basePath(getBasePath())
@@ -149,17 +120,6 @@ public class PetEndpoints {
                 .extract()
                 .response();
         return response.as(Pet.class);
-    }
-
-    public int deleteOrder(int orderId) {
-        Response response = testAPI.getAPI()
-                .basePath(getBasePath())
-                .log().all()
-                .delete("/order/"+orderId)
-                .then()
-                .extract()
-                .response();
-        return response.getStatusCode();
     }
 
     public static Pet addPet() {

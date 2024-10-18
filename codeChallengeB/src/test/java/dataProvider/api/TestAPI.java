@@ -1,9 +1,3 @@
-/*
- * Copyright (C) 2018-2020 TAG QA TEAM
- * This file is part of  TAG-automation
- * Created at 5/10/19 10:00 AM by llingerfelt
- */
-
 package dataProvider.api;
 
 import dataProvider.ConfigFileReader;

@@ -1,18 +1,13 @@
 package stepDefinitions;
 
-import dataProvider.api.datamodels.Inventory;
-import dataProvider.api.datamodels.Order;
 import dataProvider.api.datamodels.Pet;
-import dataProvider.api.datamodels.User;
 import dataProvider.api.endpoints.PetEndpoints;
-import dataProvider.api.endpoints.StoreEndpoints;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.restassured.response.Response;
 import io.restassured.response.ResponseOptions;
 
-import java.util.Arrays;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.equalTo;
@@ -21,8 +16,6 @@ import static org.hamcrest.MatcherAssert.assertThat;
 public class PetAPISteps {
 
     private final PetEndpoints petEndpoints;
-
-    private static ResponseOptions<Response> response;
 
     public PetAPISteps() {
         petEndpoints = new PetEndpoints();
