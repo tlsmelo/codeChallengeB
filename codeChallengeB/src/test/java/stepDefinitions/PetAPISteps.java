@@ -17,6 +17,8 @@ public class PetAPISteps {
 
     private final PetEndpoints petEndpoints;
 
+    private static ResponseOptions<Response> response;
+
     public PetAPISteps() {
         petEndpoints = new PetEndpoints();
     }
