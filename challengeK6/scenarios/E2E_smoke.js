@@ -1,7 +1,7 @@
 import { Httpx } from 'https://jslib.k6.io/httpx/0.0.6/index.js';
 import { describe, expect } from 'https://jslib.k6.io/k6chaijs/4.3.4.3/index.js';
 import { htmlReport } from "https://raw.githubusercontent.com/benc-uk/k6-reporter/main/dist/bundle.js";
-import { check } from 'k6';
+import { check, fail } from 'k6';
 
 
 export function handleSummary(data) {
@@ -20,7 +20,7 @@ export const options = {
     vus: 1,
     duration: '1m',
     thresholds: {
-        http_req_duration: ['p(95)<1000'], //95% should return less than 1s
+        http_req_duration: ['p(95)<500'], //95% should return less than 500ms
         http_req_failed: ['rate<0.10'] //10% of requests can fail - after some iterations the error 500 begin to happen
     }
 }
@@ -51,8 +51,14 @@ function createUserAndCheck() {
         const res = session.post(url, payload, headers)
 
         check(res, {
-            'status should be 200': (r) => r.status === 200
-        })
+            'status should be 200': (r) => {
+                if (r.status !== 200) {
+                    fail(`Expected 200 but got ${r.status}`);
+                }
+                return r.status === 200;
+            },
+        });
+
         session.newUsername = res.json('username');
         session.password = res.json('password');
     });
@@ -71,8 +77,13 @@ function DoLogin() {
         const res = session.get(`/user/login?username=${session.newUsername}&password=${session.password}`)
 
         check(res, {
-            'status should be 200': (r) => r.status === 200
-        })
+            'status should be 200': (r) => {
+                if (r.status !== 200) {
+                    fail(`Expected 200 but got ${r.status}`);
+                }
+                return r.status === 200;
+            },
+        });
     });
 }
 
@@ -108,8 +119,13 @@ function AddNewPetAndCheck() {
         const res = session.post(url, payload, headers)
 
         check(res, {
-            'status should be 200': (r) => r.status === 200
-        })
+            'status should be 200': (r) => {
+                if (r.status !== 200) {
+                    fail(`Expected 200 but got ${r.status}`);
+                }
+                return r.status === 200;
+            },
+        });
 
         session.petId = res.json('id');
     });
@@ -144,8 +160,13 @@ function PlaceOrderAndChecks() {
         const res = session.post(url, payload, headers)
 
         check(res, {
-            'status should be 200': (r) => r.status === 200
-        })
+            'status should be 200': (r) => {
+                if (r.status !== 200) {
+                    fail(`Expected 200 but got ${r.status}`);
+                }
+                return r.status === 200;
+            },
+        });
 
         session.orderId = res.json('id');
     });
@@ -163,8 +184,13 @@ function DoLogout() {
         const res = session.get('/user/logout')
 
         check(res, {
-            'status should be 200': (r) => r.status === 200
-        })
+            'status should be 200': (r) => {
+                if (r.status !== 200) {
+                    fail(`Expected 200 but got ${r.status}`);
+                }
+                return r.status === 200;
+            },
+        });
     });
 }
 
