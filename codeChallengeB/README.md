@@ -1,6 +1,6 @@
 # codeChallengeB
 
-This is the code challenge for Pet Store API
+This is the code challenge for Pet Store API testing
 
 Framework:
 - IntelliJ IDEA 2023.3.8 (Community Edition)
