@@ -3,10 +3,13 @@ import { check, sleep } from 'k6';
 import http from 'k6/http';
 
 export function handleSummary(data) {
+    const now = new Date();
+    const formattedDate = now.toISOString().replace(/T/, '-').replace(/:/g, '').substring(0, 17);
+    const fileName = `reportStoreOrder${formattedDate}.html`;
     return {
-      "summary.html": htmlReport(data),
+        [fileName]: htmlReport(data),
     };
-  }
+}
 
 export const options = {
     vus: 10,
@@ -26,7 +29,7 @@ export default function () {
         shipDate: "2024-10-30T13:29:58.646Z",
         status: "approved",
         complete: true
-      })
+    })
 
     const headers = {
         'headers': {
@@ -38,7 +41,7 @@ export default function () {
 
     console.log(res.body)
 
-    check (res, {
+    check(res, {
         'status should be 200': (r) => r.status === 200
     })
 

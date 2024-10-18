@@ -5,16 +5,19 @@ import http from 'k6/http';
 import uuid from './libs/uuid.js';
 
 export function handleSummary(data) {
+    const now = new Date();
+    const formattedDate = now.toISOString().replace(/T/, '-').replace(/:/g, '').substring(0, 17);
+    const fileName = `reportLogin${formattedDate}.html`;
     return {
-      "summary.html": htmlReport(data),
+        [fileName]: htmlReport(data),
     };
-  }
+}
 
 export const options = {
     stages: [
-        {duration: '30s', target: 50},
-        {duration: '1m', target: 50},
-        {duration: '30s', target: 0},
+        { duration: '30s', target: 50 },
+        { duration: '1m', target: 50 },
+        { duration: '30s', target: 0 },
     ],
     thresholds: {
         http_req_duration: ['p(95)<1000'], //95% should return less than 1s
@@ -27,7 +30,7 @@ export default function () {
     let password = 'test123'
     const res = http.get(`http://localhost:8080/api/v3/user/login?username=${username}&password=${password}`)
 
-    check (res, {
+    check(res, {
         'status should be 200': (r) => r.status === 200
     })
 

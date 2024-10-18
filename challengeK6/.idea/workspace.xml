@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="afb6adb6-572a-4515-a7b6-f33f990740f5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/scenarios/E2E_smoke.js" beforeDir="false" afterPath="$PROJECT_DIR$/scenarios/E2E_smoke.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeChallengeB/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../codeChallengeB/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeChallengeB/src/test/resources/features/APITestPet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../codeChallengeB/src/test/resources/features/APITestPet.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../codeChallengeB/target/test-classes/features/APITestPet.feature" beforeDir="false" afterPath="$PROJECT_DIR$/../codeChallengeB/target/test-classes/features/APITestPet.feature" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2nZofq6nq2yVy4vhopRSUvPpx80" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/TLCMELO/IdeaProjects/codeChallengeB/challengeK6"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-249ae16d76d6-a618e4d4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="afb6adb6-572a-4515-a7b6-f33f990740f5" name="Changes" comment="" />
+      <created>1729190064377</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729190064377</updated>
+    </task>
+    <servers />
+  </component>
+</project>

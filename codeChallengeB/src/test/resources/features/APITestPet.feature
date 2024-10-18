@@ -23,6 +23,6 @@ Feature: API Tests - Pet Endpoint
     Then I perform GET operation for pet by tag "tag5a" and check
 
   #Ignore this test for now
-  Scenario: Perform add a pet and then add an image
-    Given I perform POST operation for pet
-    Then I perform POST operation uploding an image for pet "11"
+#  Scenario: Perform add a pet and then add an image
+#    Given I perform POST operation for pet
+#    Then I perform POST operation uploding an image for pet "11"

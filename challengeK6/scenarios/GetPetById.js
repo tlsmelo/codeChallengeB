@@ -3,8 +3,11 @@ import { check, sleep } from 'k6';
 import http from 'k6/http';
 
 export function handleSummary(data) {
+    const now = new Date();
+    const formattedDate = now.toISOString().replace(/T/, '-').replace(/:/g, '').substring(0, 17);
+    const fileName = `reportPetById${formattedDate}.html`;
     return {
-        "summary.html": htmlReport(data),
+        [fileName]: htmlReport(data),
     };
 }
 

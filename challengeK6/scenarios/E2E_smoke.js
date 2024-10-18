@@ -5,8 +5,11 @@ import { check } from 'k6';
 
 
 export function handleSummary(data) {
+    const now = new Date();
+    const formattedDate = now.toISOString().replace(/T/, '-').replace(/:/g, '').substring(0, 17);
+    const fileName = `reportE2E${formattedDate}.html`;
     return {
-        "summary.html": htmlReport(data),
+        [fileName]: htmlReport(data),
     };
 }
 
